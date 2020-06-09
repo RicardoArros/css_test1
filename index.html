@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test UI Frontend Peixe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="./widget-styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Hola, <span class="your-name">&lt;Ricardo Arros&gt;</span></h1>
+
+    <p>Por favor recrea la siguiente imagen usando HTML5, CSS3 y sin usar ningún otro framework CSS</p>
+
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png"
+        width="303" />
+
+    <h2>Crea tu componente aquí debajo</h1>
+
+    <section class="section">
+
+        <div id="widget-container">
+
+            <!-- Widget Header -->
+            <div class="widget__header">
+                <p><span class="widget__header--money-left" id="money-left">$167</span> still needed for this project</p>
+                
+            </div>
+            <div class="arrow-down"></div>
+           
+
+            <!-- Widget Body Progress Bar -->
+            <div class="widget__body--progress-bar">
+                <div class="progress-amount" id="progress-bar"></div>
+                <div class="progress-left"></div>
+            </div>
+
+            <!-- Widget Body -->
+            <div class="widget__body">                
+
+                <div class="widget__body-container">
+                    <p><span class="widget__body--countdown-day" id="countdown-day">Only 3 days left</span> to fund this project.</p>
+
+                    <p>Join the <span class="widget__body--donors-counter" id="donors-counter"> 42</span> other donors who have already supported this project. Every dollar helps.</p>
+
+                    <form action="" class="widget__body-form" id="form">
+                        <input type="number" id="input-number" placeholder="$ 50" required>
+                        <button type="submit" id="submitButton"  name="action" disabled>Give Now</button>                    
+                    </form>
+
+                    <a href="#" class="widget__body-link">Why give <span id="input-number-value">$50?</span></a>
+                </div>
+            </div>
+
+            <!-- Widget Footer -->
+            <div class="widget__footer">
+                <a href="#">Save for later</a>
+                <a href="#">Tell your friends</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
+

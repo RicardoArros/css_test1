@@ -1,0 +1,203 @@
+/* mobile styles */
+
+.section {
+  display: block;
+  margin: 0 auto;
+}
+
+#widget-container {
+  background: #fff;
+  margin-top: 20px;
+  border: 2px solid #eee;
+  padding: 18px 20px;
+  color: rgb(110, 110, 110);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+}
+
+.widget__header {
+  position: relative;
+  background-color: #333;
+  border-radius: 4px;
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(202, 202, 202);
+}
+
+.widget__header--money-left {
+  font-weight: 700;
+}
+
+.arrow-down {
+  position: relative;
+  left: 85%;
+  bottom: 0px;
+  width: 0;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #333;
+}
+
+.widget__body {
+  margin-bottom: 12px;
+  border: 1px solid #cccccc;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  box-shadow: 0px 1px #c2c2c2;
+}
+
+.widget__body-container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.widget__body--progress-bar {
+  display: flex;
+  margin-top: 5px;
+}
+
+.widget__body--progress-bar .progress-amount,
+.widget__body--progress-bar .progress-left {
+  height: 0.7rem;
+  border: 1px solid #c2c2c2;
+  border-bottom-width: 0;
+}
+
+.widget__body--progress-bar .progress-amount {
+  background-color: rgb(228, 80, 22);
+  width: 75%;
+  border-right-width: 0;
+}
+.widget__body--progress-bar .progress-left {
+  background-color: rgb(247, 247, 247);
+  width: 25%;
+  border-left-width: 0;
+}
+
+.widget__body p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.widget__body--countdown-day {
+  font-weight: 700;
+  color: rgb(228, 80, 22);
+}
+
+.widget__body--donors-counter {
+  font-weight: 700;
+}
+
+.widget__body-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+button[type="submit"],
+input[type="number"] {
+  width: 46%;
+  border-radius: 4px;
+  padding: 14px 14px;
+}
+
+button[type="submit"] {
+  background-color: rgb(16, 173, 16);
+  color: #f7f7f7;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 1px solid rgb(31, 211, 31);
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(23, 116, 23);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  border: 1px solid #cccccc;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(71, 71, 71);
+  opacity: 1; /* Firefox */
+}
+
+.widget__body-link {
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(56, 150, 243);
+}
+
+.widget__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.widget__footer a {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding: 8px 10px;
+  box-shadow: 0px 1px #c2c2c2;
+  width: 50%;
+  align-self: center;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(110, 110, 110);
+}
+
+.widget__footer a:first-child {
+  margin-right: 17px;
+}
+
+@media (min-width: 345px) and (max-width: 376px) {
+  .widget__footer a {
+    font-size: 10px;
+  }
+}
+
+/* small tablet styles */
+@media screen and (min-width: 640px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin: 0;
+  }
+
+  #widget-container {
+    grid-column: span 3;
+    min-width: 240px;
+    /* max-width: 310px; */
+    margin: 0;
+  }
+}
+
+@media (min-width: 875px) and (max-width: 1055px) {
+  .widget__footer a {
+    font-size: 10px;
+  }
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+}
